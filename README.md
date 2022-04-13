@@ -1,4 +1,4 @@
-# Devcontainer with Android and Flutter
+# Devcontainer with Android SDK and Flutter SDK
 Pre-installed Android SDK and Flutter SDK for [Devcontainer](https://code.visualstudio.com/docs/remote/containers).
 Images are available at [Docker Hub](https://hub.docker.com/repository/docker/sambyeol/flutter-devcontainer).
 
