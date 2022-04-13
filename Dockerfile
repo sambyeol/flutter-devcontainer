@@ -32,9 +32,9 @@ RUN bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/
 ENV ANDROID_HOME=/opt/android-sdk-linux
 ENV ANDROID_SDK_ROOT=$ANDROID_HOME
 ENV PATH=${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator:${PATH}
-ENV ANDROID_SDK_TOOLS_VERSION=7583922
-ENV ANDROID_PLATFORM_VERSION=30
-ENV ANDROID_BUILD_TOOLS_VERSION=30.0.2
+ENV ANDROID_SDK_TOOLS_VERSION=
+ENV ANDROID_PLATFORM_VERSION=
+ENV ANDROID_BUILD_TOOLS_VERSION=
 
 USER root
 RUN chmod 777 /opt
@@ -78,7 +78,7 @@ RUN wget -q https://dl.google.com/android/repository/commandlinetools-linux-${AN
 
 # install flutter
 ENV FLUTTER_HOME=/opt/flutter
-ENV FLUTTER_VERSION=2.8.1
+ENV FLUTTER_VERSION=
 ENV FLUTTER_ROOT=$FLUTTER_HOME
 ENV PATH ${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin:${PATH}
 
