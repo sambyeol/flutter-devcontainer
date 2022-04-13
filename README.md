@@ -1,7 +1,6 @@
 # Devcontainer with Android SDK and Flutter
-
 Pre-installed Android SDK and Flutter for [Devcontainer](https://code.visualstudio.com/docs/remote/containers).
-Images are available at Images can be found at [Docker Hub](https://hub.docker.com/repository/docker/sambyeol/flutter-devcontainer).
+Images are available at [Docker Hub](https://hub.docker.com/repository/docker/sambyeol/flutter-devcontainer).
 
 ## Quickstart
 Make a devcontainer setting file at `.devcontainer/devcontainer.json` in your project.
