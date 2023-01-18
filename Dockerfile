@@ -13,9 +13,14 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         ca-certificates \
+        clang \
+        cmake \
         curl \
         git \
         language-pack-en \
+        libgtk-3-dev \
+        ninja-build \
+        pkg-config \
         ssh-client \
         sudo \
         unzip \
