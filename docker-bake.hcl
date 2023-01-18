@@ -15,6 +15,8 @@ target "3_3_10" {
     dockerfile = "Dockerfile"
     tags = [
         "sambyeol/flutter-devcontainer:3.3.10",
+        "sambyeol/flutter-devcontainer:3.3",
+        "sambyeol/flutter-devcontainer:3",
         "sambyeol/flutter-devcontainer:latest"
     ]
     args = {
@@ -31,6 +33,7 @@ target "3_0_0" {
     dockerfile = "Dockerfile"
     tags = [
         "sambyeol/flutter-devcontainer:3.0.0",
+        "sambyeol/flutter-devcontainer:3.0",
     ]
     args = {
         UBUNTU_VERSION = "22.04"
@@ -45,7 +48,9 @@ target "2_8_1" {
     platforms = ["linux/amd64"]
     dockerfile = "Dockerfile"
     tags = [
-        "sambyeol/flutter-devcontainer:2.8.1"
+        "sambyeol/flutter-devcontainer:2.8.1",
+        "sambyeol/flutter-devcontainer:2.8",
+        "sambyeol/flutter-devcontainer:2",
     ]
     args = {
         UBUNTU_VERSION = "20.04"
