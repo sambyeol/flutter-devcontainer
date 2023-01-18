@@ -97,3 +97,5 @@ ENV PATH ${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin:${PATH}
 RUN git clone --depth 1 --branch ${FLUTTER_VERSION} https://github.com/flutter/flutter.git ${FLUTTER_HOME} \
     && yes | flutter doctor --android-licenses \
     && flutter config --enable-web
+
+WORKDIR /workspaces
