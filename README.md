@@ -19,11 +19,3 @@ Then, reopen in container.
 ## `buildx` Compilation
 Compilation uses [Docker Buildx](https://docs.docker.com/buildx/working-with-buildx/).
 
-### Requirements
-Some system libraries are needed.
-```bash
-$ sudo apt-get update
-$ sudo apt-get install -y binfmt-support qemu qemu-user-static
-```
-
-You need `buildx` to cross-compile images.
