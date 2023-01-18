@@ -4,25 +4,33 @@ group "default" {
     ]
 }
 
-group "all" {
-    targets = [
-	"32-3_0_0",
-        "30-2_8_1"
-    ]
-}
-
 group "latest" {
     targets = [
-        "32-3_0_0"
+        "3_3_10"
     ]
 }
 
-target "32-3_0_0" {
+target "3_3_10" {
     platforms = ["linux/amd64"]
     dockerfile = "Dockerfile"
     tags = [
-        "sambyeol/flutter-devcontainer:32-3.0.0",
+        "sambyeol/flutter-devcontainer:3.3.10",
         "sambyeol/flutter-devcontainer:latest"
+    ]
+    args = {
+        UBUNTU_VERSION = "22.04"
+        ANDROID_SDK_TOOLS_VERSION = "9123335"
+        ANDROID_PLATFORM_VERSION = "33"
+        ANDROID_BUILD_TOOLS_VERSION = "33.0.1"
+        FLUTTER_VERSION = "3.3.10"
+    }
+}
+
+target "3_0_0" {
+    platforms = ["linux/amd64"]
+    dockerfile = "Dockerfile"
+    tags = [
+        "sambyeol/flutter-devcontainer:3.0.0",
     ]
     args = {
         UBUNTU_VERSION = "22.04"
@@ -33,11 +41,11 @@ target "32-3_0_0" {
     }
 }
 
-target "30-2_8_1" {
+target "2_8_1" {
     platforms = ["linux/amd64"]
     dockerfile = "Dockerfile"
     tags = [
-        "sambyeol/flutter-devcontainer:30-2.8.1"
+        "sambyeol/flutter-devcontainer:2.8.1"
     ]
     args = {
         UBUNTU_VERSION = "20.04"
