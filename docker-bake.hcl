@@ -1,12 +1,8 @@
 group "default" {
     targets = [
-        "latest"
-    ]
-}
-
-group "latest" {
-    targets = [
-        "3_3_10"
+        "3_3_10",
+        "3_0_0",
+        "2_8_1"
     ]
 }
 
@@ -14,10 +10,10 @@ target "3_3_10" {
     platforms = ["linux/amd64"]
     dockerfile = "Dockerfile"
     tags = [
-        "sambyeol/flutter-devcontainer:3.3.10",
-        "sambyeol/flutter-devcontainer:3.3",
-        "sambyeol/flutter-devcontainer:3",
-        "sambyeol/flutter-devcontainer:latest"
+        "ghcr.io/sambyeol/flutter-devcontainer:3.3.10",
+        "ghcr.io/sambyeol/flutter-devcontainer:3.3",
+        "ghcr.io/sambyeol/flutter-devcontainer:3",
+        "ghcr.io/sambyeol/flutter-devcontainer:latest"
     ]
     args = {
         UBUNTU_VERSION = "22.04"
@@ -32,8 +28,8 @@ target "3_0_0" {
     platforms = ["linux/amd64"]
     dockerfile = "Dockerfile"
     tags = [
-        "sambyeol/flutter-devcontainer:3.0.0",
-        "sambyeol/flutter-devcontainer:3.0",
+        "ghcr.io/sambyeol/flutter-devcontainer:3.0.0",
+        "ghcr.io/sambyeol/flutter-devcontainer:3.0",
     ]
     args = {
         UBUNTU_VERSION = "22.04"
@@ -48,9 +44,9 @@ target "2_8_1" {
     platforms = ["linux/amd64"]
     dockerfile = "Dockerfile"
     tags = [
-        "sambyeol/flutter-devcontainer:2.8.1",
-        "sambyeol/flutter-devcontainer:2.8",
-        "sambyeol/flutter-devcontainer:2",
+        "ghcr.io/sambyeol/flutter-devcontainer:2.8.1",
+        "ghcr.io/sambyeol/flutter-devcontainer:2.8",
+        "ghcr.io/sambyeol/flutter-devcontainer:2",
     ]
     args = {
         UBUNTU_VERSION = "20.04"

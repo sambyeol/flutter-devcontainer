@@ -2,6 +2,8 @@ ARG UBUNTU_VERSION=
 
 FROM ubuntu:${UBUNTU_VERSION}
 
+LABEL org.opencontainers.image.source https://github.com/sambyeol/flutter-devcontainer
+
 ARG ANDROID_SDK_TOOLS_VERSION=
 ARG ANDROID_PLATFORM_VERSION=
 ARG ANDROID_BUILD_TOOLS_VERSION=
