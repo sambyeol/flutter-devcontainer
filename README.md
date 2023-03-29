@@ -6,7 +6,7 @@ Images are available at `ghcr.io/sambyeol/flutter-devcontainer`.
 Make a devcontainer setting file at `.devcontainer/devcontainer.json` in your project.
 ```json
 {
-    "image": "sambyeol/flutter-devcontainer",
+    "image": "ghcr.io/sambyeol/flutter-devcontainer",
     "runArgs": [ "--init" ],
     "extensions": [
         "dart-code.dart-code",
